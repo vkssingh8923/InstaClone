@@ -1,0 +1,26 @@
+{
+  "name": "instaclone",
+  "version": "1.0.0",
+  "description": "Instaclone project with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkssingh8923/InstaClone.git"
+  },
+  "keywords": [
+    "instaclone",
+    "react"
+  ],
+  "author": "Vikas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vkssingh8923/InstaClone/issues"
+  },
+  "homepage": "https://github.com/vkssingh8923/InstaClone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
