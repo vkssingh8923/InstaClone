@@ -1,17 +1,16 @@
 const express=require('express')
+const mongoose  = require('mongoose')
 const app =express()
 const PORT =5000
+const db=require('./mongodb')
 
-const middleware=(req,res,next)=>{
-    console.log("mid1");
-    next()
-}
+require('./modals/user')
 
-// app.use(middleware)
+app.use(express.json())
+app.use(require('./routes/auth'))
 
-app.get('/home',middleware,(req,res)=>{
-    res.send("homew")
-})
+mongoose.model('User')
+
 
 app.get('/',(req,res)=>{
     // console.log(res);
